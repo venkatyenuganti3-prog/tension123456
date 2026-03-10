@@ -1,0 +1,49 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "simha12326"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"StudentID": {
+					"type": "string"
+				},
+				"Name": {
+					"type": "string"
+				},
+				"Age": {
+					"type": "string"
+				},
+				"Gender": {
+					"type": "string"
+				},
+				"Math": {
+					"type": "string"
+				},
+				"Science": {
+					"type": "string"
+				},
+				"English": {
+					"type": "string"
+				},
+				"Total": {
+					"type": "string"
+				},
+				"Grade": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

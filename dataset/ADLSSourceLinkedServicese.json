@@ -1,0 +1,60 @@
+{
+	"name": "ADLSSourceLinkedServicese",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "students_practice_dataset.json",
+				"fileSystem": "simha12326"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "{\"StudentID\":\"1\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Name\":\"Ravi\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Age\":\"18\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Gender\":\"M\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Math\":\"85\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Science\":\"78\"",
+				"type": "String"
+			},
+			{
+				"name": "\"English\":\"88\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Total\":\"251\"",
+				"type": "String"
+			},
+			{
+				"name": "\"Grade\":\"A\"}",
+				"type": "String"
+			}
+		]
+	}
+}
