@@ -47,6 +47,15 @@
 		"AzureSqlDatabase1_password": {
 			"value": ""
 		},
+		"AzureDataLakeStorage14_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage15_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage16_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://amaras12326.dfs.core.windows.net/"
 		},
@@ -94,6 +103,15 @@
 		},
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"value": "admin19126"
+		},
+		"AzureDataLakeStorage14_properties_typeProperties_url": {
+			"value": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage15_properties_typeProperties_url": {
+			"value": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage16_properties_typeProperties_url": {
+			"value": "https://amaras12326.dfs.core.windows.net/"
 		}
 	}
 }

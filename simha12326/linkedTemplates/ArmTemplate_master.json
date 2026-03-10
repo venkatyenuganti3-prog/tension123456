@@ -63,6 +63,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AzureSqlDatabase1'"
 		},
+		"AzureDataLakeStorage14_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage14'"
+		},
+		"AzureDataLakeStorage15_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage15'"
+		},
+		"AzureDataLakeStorage16_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage16'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
@@ -126,6 +138,18 @@
 		"AzureSqlDatabase1_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "admin19126"
+		},
+		"AzureDataLakeStorage14_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage15_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage16_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://amaras12326.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -196,6 +220,15 @@
 					"AzureSqlDatabase1_password": {
 						"value": "[parameters('AzureSqlDatabase1_password')]"
 					},
+					"AzureDataLakeStorage14_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage14_accountKey')]"
+					},
+					"AzureDataLakeStorage15_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage15_accountKey')]"
+					},
+					"AzureDataLakeStorage16_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage16_accountKey')]"
+					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
 					},
@@ -243,6 +276,15 @@
 					},
 					"AzureSqlDatabase1_properties_typeProperties_userName": {
 						"value": "[parameters('AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureDataLakeStorage14_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage14_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage15_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage15_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage16_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage16_properties_typeProperties_url')]"
 					}
 				}
 			},
