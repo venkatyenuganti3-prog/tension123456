@@ -1,0 +1,56 @@
+{
+	"name": "adlssourcelinkedservicesa",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage8",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sales_practice_dataset.csv",
+				"fileSystem": "students-data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "String"
+			},
+			{
+				"name": "CustomerName",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Product",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "Price_per_Unit",
+				"type": "String"
+			},
+			{
+				"name": "Total_Amount",
+				"type": "String"
+			},
+			{
+				"name": "Order_Date",
+				"type": "String"
+			}
+		]
+	}
+}

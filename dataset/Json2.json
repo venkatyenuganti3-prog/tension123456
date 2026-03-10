@@ -1,0 +1,49 @@
+{
+	"name": "Json2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "kambampati12345"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"{\"StudentID\":\"1\"": {
+					"type": "string"
+				},
+				"Name:\"Ravi\"": {
+					"type": "string"
+				},
+				"Age:\"18\"": {
+					"type": "string"
+				},
+				"Gender:\"M\"": {
+					"type": "string"
+				},
+				"Math:\"85\"": {
+					"type": "string"
+				},
+				"Science:\"78\"": {
+					"type": "string"
+				},
+				"English:\"88\"": {
+					"type": "string"
+				},
+				"Total:\"251\"": {
+					"type": "string"
+				},
+				"Grade:\"A\"}": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
