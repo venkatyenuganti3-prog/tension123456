@@ -3,22 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
-				"type": "Copy",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"enableStaging": false
-				}
-			},
-			{
 				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [],
@@ -75,6 +59,54 @@
 						}
 					},
 					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Json6",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy data4",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
 							"type": "AzureBlobFSWriteSettings"
@@ -97,20 +129,20 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText4",
+						"referenceName": "DelimitedText8",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText6",
+						"referenceName": "DelimitedText9",
 						"type": "DatasetReference"
 					}
 				]
 			},
 			{
-				"name": "Copy data4",
-				"type": "Copy",
+				"name": "Delete1",
+				"type": "Delete",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -121,37 +153,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
-			},
-			{
-				"name": "Delete1",
-				"type": "Delete",
-				"dependsOn": [
-					{
-						"activity": "Copy data3",
-						"dependencyConditions": [
-							"Skipped"
-						]
-					},
-					{
-						"activity": "Copy data4",
-						"dependencyConditions": [
-							"Skipped"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
 					"dataset": {
-						"referenceName": "Binary3",
+						"referenceName": "Binary4",
 						"type": "DatasetReference"
 					},
 					"logStorageSettings": {
